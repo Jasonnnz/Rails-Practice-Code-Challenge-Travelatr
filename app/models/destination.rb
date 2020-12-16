@@ -12,7 +12,7 @@ class Destination < ApplicationRecord
     end
 
     def destination_featured_post
-        self.posts.max {|post| post.likes}
+        self.posts.max_by {|post| post.likes}
     end
 
     def average_age

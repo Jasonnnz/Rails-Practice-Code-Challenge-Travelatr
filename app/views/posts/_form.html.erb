@@ -10,8 +10,8 @@
     <%= f.label :content %>
     <%= f.text_area :content %><br>
     <%= f.label :blogger_id %>
-    <%= f.collection_select :blogger, @bloggers, :id, :name %><br>
+    <%= f.collection_select :blogger_id, @bloggers, :id, :name %><br>
     <%= f.label :destination_id %>
-    <%= f.collection_select :destination, @destinations, :id, :name %><br>
+    <%= f.collection_select :destination_id, @destinations, :id, :name %><br>
     <%= f.submit %>
 <% end %>
